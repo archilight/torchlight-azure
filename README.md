@@ -3,7 +3,7 @@ This is an Archi plugin that provides an Azure overlay Archimate Technology Laye
 
 ![torchlight-azure](https://raw.githubusercontent.com/archilight/torchlight-azure/master/Images/torchlight-azure-view.JPG)
 
-# Archi Word Document Generator Plug-in
+# Archi Azure Diagrams Plug-in
 
 ## What is this?
 This is an extension to Archi that enables creation of Azure Technology Views within Archi Archimate application.  It is work in progress.
@@ -17,7 +17,7 @@ The Wiki pages provide full documentation on how to use plugin and mapping to Az
 
 ## Roadmap
 
-The plugin is work in progress and development is incremental and iterative.  More features will be added as it get used.
+The plugin is work in progress and development is incremental and iterative.  More features will be added as it get used.  Archi release 4.3 is needed to use this plugin. 
 
 ## Archi
 Archi® is a free, open source, cross-platform tool and editor to create ArchiMate models.
