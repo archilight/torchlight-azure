@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+<extension
+      name="Archimate Elements"
+      point="com.archimatetool.editor.objectUIProvider">
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.SystemSoftwareUIProvider"
+            id="com.archimatetool.editor.SystemSoftwareUIProvider">
+      </uiProvider>
+      
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.ArtifactUIProvider"
+            id="com.archimatetool.editor.ArtifactUIProvider">
+      </uiProvider>
+      
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.NodeUIProvider"
+            id="com.archimatetool.editor.NodeUIProvider">
+      </uiProvider>
+      
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.PathUIProvider"
+            id="com.archimatetool.editor.PathUIProvider">
+      </uiProvider>
+      
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.TechnologyInterfaceUIProvider"
+            id="com.archimatetool.editor.TechnologyInterfaceUIProvider">
+      </uiProvider>
+      
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.LocationUIProvider"
+            id="com.archimatetool.editor.LocationUIProvider">
+      </uiProvider>
+
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.ResourceUIProvider"
+            id="com.archimatetool.editor.LocationUIProvider">
+      </uiProvider>
+    
+      <uiProvider
+            class="com.torchlight.azure.uiProvider.elements.CommunicationNetworkUIProvider"
+            id="com.archimatetool.editor.LocationUIProvider">
+      </uiProvider>
+    
+   </extension>
+
+
+ <extension
+      point="org.eclipse.ui.editors">
+      <editor
+            class="com.torchlight.azure.diagram.ArchimateDiagramEditor"
+            contributorClass="com.archimatetool.editor.diagram.ArchimateDiagramEditorActionBarContributor"
+            default="false"
+            icon="img/diagram.png"
+            id="com.archimatetool.editor.diagramEditor"
+            name="View">
+      </editor>
+   </extension>
+ 
+ <extension
+         point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+     <propertyTabs
+            contributorId="com.archimatetool.editor">
+         <propertyTab
+               afterTab="properties.tab"
+               category="main.category"
+               id="azure.tab"
+               label="Azure Config">
+         </propertyTab>
+         
+      </propertyTabs>
+ </extension>
+ 
+<extension
+         point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections
+            contributorId="com.archimatetool.editor">
+ 
+
+ 		<propertySection
+               class="com.torchlight.azure.propertysections.AzureElementSection"
+               filter="com.torchlight.azure.propertysections.AzureElementSection$Filter"
+               id="sketchElementSection"
+               tab="azure.tab">
+         </propertySection>
+  </propertySections>
+</extension>
+ 
+</plugin>
