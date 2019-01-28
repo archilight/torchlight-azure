@@ -1,7 +1,7 @@
 # torchlight-present
 This is an Archi plugin that provides an Azure overlay Archimate Technology Layer.  This fully integrated with rest of Architmate.
 
-![torchlight-azure](https://raw.githubusercontent.com/archilight/torchlight-present/master/Images/torchlight-azure-view.JPG)
+![torchlight-azure](https://raw.githubusercontent.com/archilight/torchlight-azure/master/Images/torchlight-azure-view.JPG)
 
 # Archi Word Document Generator Plug-in
 
